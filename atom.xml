@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="jiaonangshuo.com/"/>
-  <updated>2017-10-15T04:01:16.036Z</updated>
+  <updated>2017-10-06T17:14:40.215Z</updated>
   <id>jiaonangshuo.com/</id>
   
   <author>
@@ -14,448 +14,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>改天约后台接口文档</title>
-    <link href="jiaonangshuo.com/2017/10/15/%E6%94%B9%E5%A4%A9%E7%BA%A6%E5%90%8E%E5%8F%B0%E6%8E%A5%E5%8F%A3%E6%96%87%E6%A1%A3/"/>
-    <id>jiaonangshuo.com/2017/10/15/改天约后台接口文档/</id>
-    <published>2017-10-14T16:00:00.000Z</published>
-    <updated>2017-10-15T04:01:16.036Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="修改记录"><a href="#修改记录" class="headerlink" title="修改记录"></a>修改记录</h4><hr>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">日期</th>
-<th style="text-align:center">修改人</th>
-<th style="text-align:center">涉及接口</th>
-<th style="text-align:center">修改内容</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">2017.9.5</td>
-<td style="text-align:center">陈晨</td>
-<td style="text-align:center">新建</td>
-<td style="text-align:center">新建</td>
-</tr>
-<tr>
-<td style="text-align:center">2017.9.20</td>
-<td style="text-align:center">陈晨</td>
-<td style="text-align:center">修改</td>
-<td style="text-align:center">添加邀请逻辑</td>
-</tr>
-<tr>
-<td style="text-align:center">2017.9.23</td>
-<td style="text-align:center">陈晨</td>
-<td style="text-align:center">修改</td>
-<td style="text-align:center">1.添加检测用户能否消费。2.添加酒吧流量查询接口。3.添加检查版本。4.修改注册，找回、修改密码</td>
-</tr>
-</tbody>
-</table>
-<h4 id="全局错误码"><a href="#全局错误码" class="headerlink" title="全局错误码"></a>全局错误码</h4><hr>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">错误码</th>
-<th style="text-align:center">错误解释</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">1001</td>
-<td style="text-align:center">接口认证失败</td>
-</tr>
-<tr>
-<td style="text-align:center">1002</td>
-<td style="text-align:center">授权过期</td>
-</tr>
-<tr>
-<td style="text-align:center">1003</td>
-<td style="text-align:center">缺失参数</td>
-</tr>
-</tbody>
-</table>
-<h4 id="手机注册"><a href="#手机注册" class="headerlink" title="手机注册"></a>手机注册</h4><hr>
-<h5 id="简要描述："><a href="#简要描述：" class="headerlink" title="简要描述："></a>简要描述：</h5><ul>
-<li>用户注册接口</li>
-</ul>
-<h5 id="请求URL："><a href="#请求URL：" class="headerlink" title="请求URL："></a>请求URL：</h5><ul>
-<li><code>http://xx.com/api/user/register</code></li>
-</ul>
-<h5 id="请求方法："><a href="#请求方法：" class="headerlink" title="请求方法："></a>请求方法：</h5><ul>
-<li>POST</li>
-</ul>
-<h5 id="请求参数："><a href="#请求参数：" class="headerlink" title="请求参数："></a>请求参数：</h5><table>
-<thead>
-<tr>
-<th style="text-align:center">参数</th>
-<th style="text-align:center">必传</th>
-<th style="text-align:center">类型</th>
-<th style="text-align:center">描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">username</td>
-<td style="text-align:center">ture</td>
-<td style="text-align:center">string</td>
-<td style="text-align:center">用户手机号</td>
-</tr>
-<tr>
-<td style="text-align:center">password</td>
-<td style="text-align:center">true</td>
-<td style="text-align:center">string</td>
-<td style="text-align:center">密码</td>
-</tr>
-<tr>
-<td style="text-align:center">invitecode</td>
-<td style="text-align:center">true</td>
-<td style="text-align:center">string</td>
-<td style="text-align:center">邀请码，可为空</td>
-</tr>
-</tbody>
-</table>
-<h5 id="返回数据："><a href="#返回数据：" class="headerlink" title="返回数据："></a>返回数据：</h5><figure class="highlight json"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">	<span class="attr">"errorCode"</span>: <span class="number">0</span>,</div><div class="line">	<span class="attr">"data"</span>: &#123;</div><div class="line">		<span class="attr">"userID"</span>: <span class="string">"1"</span>,</div><div class="line">		<span class="attr">"username"</span>: <span class="string">"18612345678"</span>,</div><div class="line">		<span class="attr">"name"</span>: <span class="string">"Jim"</span>,</div><div class="line">		<span class="attr">"groupID"</span>: <span class="number">2</span> ,</div><div class="line">		<span class="attr">"registerTime"</span>: <span class="string">"1436864169"</span>,</div><div class="line">		<span class="attr">"lastLoginTime"</span>: <span class="string">"0"</span>,</div><div class="line">		<span class="attr">"retrenchMoney"</span>: <span class="number">100.5</span>,</div><div class="line">		<span class="attr">"myBarList"</span>: [</div><div class="line">			&#123;</div><div class="line">				<span class="attr">"barID"</span>: <span class="number">100</span>,</div><div class="line">				<span class="attr">"barName"</span>: <span class="string">"XXX"</span>,</div><div class="line">				<span class="attr">"date"</span>: <span class="number">1436864169</span>,</div><div class="line">			&#125;,</div><div class="line">			&#123;</div><div class="line">				<span class="attr">"barID"</span>: <span class="number">100</span>,</div><div class="line">				<span class="attr">"barName"</span>: <span class="string">"XXX"</span>,</div><div class="line">				<span class="attr">"date"</span>: <span class="number">1436864169</span>,</div><div class="line">			&#125;,</div><div class="line">		],</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h4 id="登录"><a href="#登录" class="headerlink" title="登录"></a>登录</h4><hr>
-<h5 id="简要描述：-1"><a href="#简要描述：-1" class="headerlink" title="简要描述："></a>简要描述：</h5><ul>
-<li>用户登录接口</li>
-</ul>
-<h5 id="请求URL：-1"><a href="#请求URL：-1" class="headerlink" title="请求URL："></a>请求URL：</h5><ul>
-<li><code>http://xx.com/api/user/login</code></li>
-</ul>
-<h5 id="请求方法：-1"><a href="#请求方法：-1" class="headerlink" title="请求方法："></a>请求方法：</h5><ul>
-<li>POST</li>
-</ul>
-<h5 id="请求参数：-1"><a href="#请求参数：-1" class="headerlink" title="请求参数："></a>请求参数：</h5><table>
-<thead>
-<tr>
-<th style="text-align:center">参数</th>
-<th style="text-align:center">必传</th>
-<th style="text-align:center">类型</th>
-<th style="text-align:center">描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">username</td>
-<td style="text-align:center">ture</td>
-<td style="text-align:center">string</td>
-<td style="text-align:center">用户手机号</td>
-</tr>
-<tr>
-<td style="text-align:center">password</td>
-<td style="text-align:center">true</td>
-<td style="text-align:center">string</td>
-<td style="text-align:center">密码，未加密</td>
-</tr>
-</tbody>
-</table>
-<h5 id="返回数据：-1"><a href="#返回数据：-1" class="headerlink" title="返回数据："></a>返回数据：</h5><figure class="highlight json"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">	<span class="attr">"errorCode"</span>: <span class="number">0</span>,</div><div class="line">	<span class="attr">"data"</span>: &#123;</div><div class="line">		<span class="attr">"userType"</span> : <span class="string">"1"</span>,</div><div class="line">		<span class="attr">"userID"</span>: <span class="string">"1"</span>,</div><div class="line">		<span class="attr">"username"</span>: <span class="string">"12154545"</span>,</div><div class="line">		<span class="attr">"name"</span>: <span class="string">"Jim"</span>,</div><div class="line">		<span class="attr">"groupID"</span>: <span class="number">2</span> ,</div><div class="line">		<span class="attr">"registerTime"</span>: <span class="string">"1436864169"</span>,</div><div class="line">		<span class="attr">"lastLoginTime"</span>: <span class="string">"0"</span>,</div><div class="line">		<span class="attr">"retrenchMoney"</span>: <span class="number">100.5</span>,</div><div class="line">		<span class="attr">"myBarList"</span>: [</div><div class="line">			&#123;</div><div class="line">				<span class="attr">"barID"</span>: <span class="number">100</span>,</div><div class="line">				<span class="attr">"barName"</span>: <span class="string">"XXX"</span>,</div><div class="line">				<span class="attr">"date"</span>: <span class="number">1436864169</span>,</div><div class="line">			&#125;,</div><div class="line">			&#123;</div><div class="line">				<span class="attr">"barID"</span>: <span class="number">100</span>,</div><div class="line">				<span class="attr">"barName"</span>: <span class="string">"XXX"</span>,</div><div class="line">				<span class="attr">"date"</span>: <span class="number">1436864169</span>,</div><div class="line">			&#125;,</div><div class="line">		],</div><div class="line"></div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h4 id="修改密码"><a href="#修改密码" class="headerlink" title="修改密码"></a>修改密码</h4><hr>
-<h5 id="简要描述：-2"><a href="#简要描述：-2" class="headerlink" title="简要描述："></a>简要描述：</h5><ul>
-<li>用户修改密码接口</li>
-</ul>
-<h5 id="请求URL：-2"><a href="#请求URL：-2" class="headerlink" title="请求URL："></a>请求URL：</h5><ul>
-<li><code>http://xx.com/api/setting/password/update</code></li>
-</ul>
-<h5 id="请求方法：-2"><a href="#请求方法：-2" class="headerlink" title="请求方法："></a>请求方法：</h5><ul>
-<li>POST</li>
-</ul>
-<h5 id="请求参数：-2"><a href="#请求参数：-2" class="headerlink" title="请求参数："></a>请求参数：</h5><table>
-<thead>
-<tr>
-<th style="text-align:center">参数</th>
-<th style="text-align:center">必传</th>
-<th style="text-align:center">类型</th>
-<th style="text-align:center">描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">username</td>
-<td style="text-align:center">ture</td>
-<td style="text-align:center">string</td>
-<td style="text-align:center">用户手机号</td>
-</tr>
-<tr>
-<td style="text-align:center">newPassword</td>
-<td style="text-align:center">true</td>
-<td style="text-align:center">string</td>
-<td style="text-align:center">新密码，加密</td>
-</tr>
-</tbody>
-</table>
-<h5 id="返回数据：-2"><a href="#返回数据：-2" class="headerlink" title="返回数据："></a>返回数据：</h5><figure class="highlight json"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">	<span class="attr">"errorCode"</span>: <span class="number">0</span>,</div><div class="line">	<span class="attr">"data"</span>: &#123;</div><div class="line">		</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h4 id="登出"><a href="#登出" class="headerlink" title="登出"></a>登出</h4><hr>
-<h5 id="简要描述：-3"><a href="#简要描述：-3" class="headerlink" title="简要描述："></a>简要描述：</h5><ul>
-<li>用户登出接口</li>
-</ul>
-<h5 id="请求URL：-3"><a href="#请求URL：-3" class="headerlink" title="请求URL："></a>请求URL：</h5><ul>
-<li><code>http://xx.com/api/user/logout</code></li>
-</ul>
-<h5 id="请求方法：-3"><a href="#请求方法：-3" class="headerlink" title="请求方法："></a>请求方法：</h5><ul>
-<li>POST</li>
-</ul>
-<h5 id="请求参数：-3"><a href="#请求参数：-3" class="headerlink" title="请求参数："></a>请求参数：</h5><table>
-<thead>
-<tr>
-<th style="text-align:center">参数</th>
-<th style="text-align:center">必传</th>
-<th style="text-align:center">类型</th>
-<th style="text-align:center">描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">userID</td>
-<td style="text-align:center">ture</td>
-<td style="text-align:center">string</td>
-<td style="text-align:center">用户ID</td>
-</tr>
-</tbody>
-</table>
-<h5 id="返回数据：-3"><a href="#返回数据：-3" class="headerlink" title="返回数据："></a>返回数据：</h5><figure class="highlight json"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">	<span class="attr">"errorCode"</span>: <span class="number">0</span>,</div><div class="line">	<span class="attr">"data"</span>: &#123;</div><div class="line">		</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h4 id="酒吧列表"><a href="#酒吧列表" class="headerlink" title="酒吧列表"></a>酒吧列表</h4><hr>
-<h5 id="简要描述：-4"><a href="#简要描述：-4" class="headerlink" title="简要描述："></a>简要描述：</h5><ul>
-<li>用户获取酒吧列表，用于地区显示等等</li>
-</ul>
-<h5 id="请求URL：-4"><a href="#请求URL：-4" class="headerlink" title="请求URL："></a>请求URL：</h5><ul>
-<li><code>http://xx.com/api/bar/list</code></li>
-</ul>
-<h5 id="请求方法：-4"><a href="#请求方法：-4" class="headerlink" title="请求方法："></a>请求方法：</h5><ul>
-<li>POST</li>
-</ul>
-<h5 id="请求参数：-4"><a href="#请求参数：-4" class="headerlink" title="请求参数："></a>请求参数：</h5><table>
-<thead>
-<tr>
-<th style="text-align:center">参数</th>
-<th style="text-align:center">必传</th>
-<th style="text-align:center">类型</th>
-<th style="text-align:center">描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">userLongitude</td>
-<td style="text-align:center">ture</td>
-<td style="text-align:center">string</td>
-<td style="text-align:center">用户经度</td>
-</tr>
-<tr>
-<td style="text-align:center">userLatitude</td>
-<td style="text-align:center">ture</td>
-<td style="text-align:center">string</td>
-<td style="text-align:center">用户纬度</td>
-</tr>
-<tr>
-<td style="text-align:center">range</td>
-<td style="text-align:center">ture</td>
-<td style="text-align:center">string</td>
-<td style="text-align:center">范围，e.g. 500米</td>
-</tr>
-</tbody>
-</table>
-<h5 id="返回数据：-4"><a href="#返回数据：-4" class="headerlink" title="返回数据："></a>返回数据：</h5><figure class="highlight json"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">	<span class="attr">"errorCode"</span>: <span class="number">0</span>,</div><div class="line">	<span class="attr">"data"</span>: &#123;</div><div class="line">		<span class="attr">"barList"</span>: [</div><div class="line">			&#123;</div><div class="line">				<span class="attr">"barID"</span>: <span class="string">"1001"</span>,</div><div class="line">				<span class="attr">"barName"</span>: <span class="string">"XXXX"</span>,</div><div class="line">				<span class="attr">"barLongitude"</span>: <span class="string">"103.21"</span>,</div><div class="line">				<span class="attr">"barLatitude"</span>: <span class="string">"103.21"</span>,</div><div class="line">			&#125;,</div><div class="line">			&#123;</div><div class="line">				<span class="attr">"barID"</span>: <span class="string">"1001"</span>,</div><div class="line">				<span class="attr">"barName"</span>: <span class="string">"XXXX"</span>,</div><div class="line">				<span class="attr">"barLongitude"</span>: <span class="string">"103.21"</span>,</div><div class="line">				<span class="attr">"barLatitude"</span>: <span class="string">"103.21"</span>,</div><div class="line">			&#125;,</div><div class="line">		],</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h4 id="酒吧详细"><a href="#酒吧详细" class="headerlink" title="酒吧详细"></a>酒吧详细</h4><hr>
-<h5 id="简要描述：-5"><a href="#简要描述：-5" class="headerlink" title="简要描述："></a>简要描述：</h5><ul>
-<li>用户获取酒吧详细信息</li>
-</ul>
-<h5 id="请求URL：-5"><a href="#请求URL：-5" class="headerlink" title="请求URL："></a>请求URL：</h5><ul>
-<li><code>http://xx.com/api/bar/detail</code></li>
-</ul>
-<h5 id="请求方法：-5"><a href="#请求方法：-5" class="headerlink" title="请求方法："></a>请求方法：</h5><ul>
-<li>POST</li>
-</ul>
-<h5 id="请求参数：-5"><a href="#请求参数：-5" class="headerlink" title="请求参数："></a>请求参数：</h5><table>
-<thead>
-<tr>
-<th style="text-align:center">参数</th>
-<th style="text-align:center">必传</th>
-<th style="text-align:center">类型</th>
-<th style="text-align:center">描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">barID</td>
-<td style="text-align:center">ture</td>
-<td style="text-align:center">string</td>
-<td style="text-align:center">酒吧ID</td>
-</tr>
-</tbody>
-</table>
-<h5 id="返回数据：-5"><a href="#返回数据：-5" class="headerlink" title="返回数据："></a>返回数据：</h5><figure class="highlight json"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">	<span class="attr">"errorCode"</span>: <span class="number">0</span>,</div><div class="line">	<span class="attr">"data"</span>: &#123;</div><div class="line">		<span class="attr">"barID"</span>: <span class="string">"1002"</span>,</div><div class="line">		<span class="attr">"barName"</span>: <span class="string">"XXXX"</span>,</div><div class="line">		<span class="attr">"barAddress"</span>: <span class="string">"北京市西城区XXXXXXX"</span>,</div><div class="line">		<span class="attr">"recentlyClient"</span>: <span class="string">"100"</span>,</div><div class="line">		<span class="attr">"intro"</span>: <span class="string">"吹牛的桥段"</span>,</div><div class="line">		<span class="attr">"barImgae"</span>: [</div><div class="line">			<span class="string">"http://XXX.XXX.XXX.XXX/image/XXX/XXX.png"</span>,</div><div class="line">			<span class="string">"http://XXX.XXX.XXX.XXX/image/XXX/XXX.png"</span>,</div><div class="line">			<span class="string">"http://XXX.XXX.XXX.XXX/image/XXX/XXX.png"</span>,</div><div class="line">		],</div><div class="line">		<span class="attr">"barURL"</span>: <span class="string">"http://www.baidu.com"</span>,</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h4 id="兑换"><a href="#兑换" class="headerlink" title="兑换"></a>兑换</h4><hr>
-<h5 id="简要描述：-6"><a href="#简要描述：-6" class="headerlink" title="简要描述："></a>简要描述：</h5><ul>
-<li>用户到达酒吧领取酒品前，使用扫描二维码签到</li>
-</ul>
-<h5 id="请求URL：-6"><a href="#请求URL：-6" class="headerlink" title="请求URL："></a>请求URL：</h5><ul>
-<li><code>http://xx.com/api/order/exchange</code></li>
-</ul>
-<h5 id="请求方法：-6"><a href="#请求方法：-6" class="headerlink" title="请求方法："></a>请求方法：</h5><ul>
-<li>POST</li>
-</ul>
-<h5 id="请求参数：-6"><a href="#请求参数：-6" class="headerlink" title="请求参数："></a>请求参数：</h5><table>
-<thead>
-<tr>
-<th style="text-align:center">参数</th>
-<th style="text-align:center">必传</th>
-<th style="text-align:center">类型</th>
-<th style="text-align:center">描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">userID</td>
-<td style="text-align:center">ture</td>
-<td style="text-align:center">string</td>
-<td style="text-align:center">用户ID</td>
-</tr>
-<tr>
-<td style="text-align:center">barCode</td>
-<td style="text-align:center">ture</td>
-<td style="text-align:center">string</td>
-<td style="text-align:center">酒吧静态码，通过扫描二维码后解密获取</td>
-</tr>
-</tbody>
-</table>
-<h5 id="返回数据：-6"><a href="#返回数据：-6" class="headerlink" title="返回数据："></a>返回数据：</h5><figure class="highlight json"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">	<span class="attr">"errorCode"</span>: <span class="number">0</span>,</div><div class="line">	<span class="attr">"data"</span>: &#123;</div><div class="line">		<span class="attr">"barName"</span>: <span class="string">"XXXXXXXX"</span>,</div><div class="line">		<span class="attr">"exchangeDatetime"</span>: <span class="string">"2017.9.23"</span></div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h4 id="兑换记录"><a href="#兑换记录" class="headerlink" title="兑换记录"></a>兑换记录</h4><hr>
-<h5 id="简要描述：-7"><a href="#简要描述：-7" class="headerlink" title="简要描述："></a>简要描述：</h5><ul>
-<li>用户查询以往的兑换记录</li>
-</ul>
-<h5 id="请求URL：-7"><a href="#请求URL：-7" class="headerlink" title="请求URL："></a>请求URL：</h5><ul>
-<li><code>http://xx.com/api/order/history</code></li>
-</ul>
-<h5 id="请求方法：-7"><a href="#请求方法：-7" class="headerlink" title="请求方法："></a>请求方法：</h5><ul>
-<li>POST</li>
-</ul>
-<h5 id="请求参数：-7"><a href="#请求参数：-7" class="headerlink" title="请求参数："></a>请求参数：</h5><table>
-<thead>
-<tr>
-<th style="text-align:center">参数</th>
-<th style="text-align:center">必传</th>
-<th style="text-align:center">类型</th>
-<th style="text-align:center">描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">userID</td>
-<td style="text-align:center">ture</td>
-<td style="text-align:center">string</td>
-<td style="text-align:center">用户ID</td>
-</tr>
-</tbody>
-</table>
-<h5 id="返回数据：-7"><a href="#返回数据：-7" class="headerlink" title="返回数据："></a>返回数据：</h5><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">	"errorCode": 0,</div><div class="line">	"data": &#123;</div><div class="line">		[</div><div class="line">			&#123;</div><div class="line">				"barName": "XXXX",</div><div class="line">				"datetime": "2017.9.20 20:20:20"</div><div class="line">			&#125;,</div><div class="line">			&#123;</div><div class="line">				"barName": "XXXX",</div><div class="line">				"datetime": "2017.9.20 20:20:20"</div><div class="line">			&#125;</div><div class="line">		]</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h4 id="获取公告"><a href="#获取公告" class="headerlink" title="获取公告"></a>获取公告</h4><hr>
-<h5 id="简要描述：-8"><a href="#简要描述：-8" class="headerlink" title="简要描述："></a>简要描述：</h5><ul>
-<li>用户或游客获取公告信息</li>
-</ul>
-<h5 id="请求URL：-8"><a href="#请求URL：-8" class="headerlink" title="请求URL："></a>请求URL：</h5><ul>
-<li><code>http://xx.com/api/notice</code></li>
-</ul>
-<h5 id="请求方法：-8"><a href="#请求方法：-8" class="headerlink" title="请求方法："></a>请求方法：</h5><ul>
-<li>POST</li>
-</ul>
-<h5 id="请求参数：-8"><a href="#请求参数：-8" class="headerlink" title="请求参数："></a>请求参数：</h5><table>
-<thead>
-<tr>
-<th style="text-align:center">参数</th>
-<th style="text-align:center">必传</th>
-<th style="text-align:center">类型</th>
-<th style="text-align:center">描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">userID</td>
-<td style="text-align:center">false</td>
-<td style="text-align:center">string</td>
-<td style="text-align:center">用户ID，可为空</td>
-</tr>
-<tr>
-<td style="text-align:center">lastUpdateTime</td>
-<td style="text-align:center">ture</td>
-<td style="text-align:center">string</td>
-<td style="text-align:center">上次更新时间</td>
-</tr>
-</tbody>
-</table>
-<h5 id="返回数据：-8"><a href="#返回数据：-8" class="headerlink" title="返回数据："></a>返回数据：</h5><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">	"errorCode": 0,</div><div class="line">	"data": &#123;</div><div class="line">		[</div><div class="line">			&#123;</div><div class="line">				"noticeTitle": "XXXX",</div><div class="line">				"datetime": "2017.9.20 20:20:20"</div><div class="line">				"noticeContent": "XXXXXXXXXXXX"</div><div class="line">			&#125;,</div><div class="line">			&#123;</div><div class="line">				"noticeTitle": "XXXX",</div><div class="line">				"datetime": "2017.9.20 20:20:20"</div><div class="line">				"noticeContent": "XXXXXXXXXXXX"</div><div class="line">			&#125;</div><div class="line">		]</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h4 id="检查版本"><a href="#检查版本" class="headerlink" title="检查版本"></a>检查版本</h4><hr>
-<h5 id="简要描述：-9"><a href="#简要描述：-9" class="headerlink" title="简要描述："></a>简要描述：</h5><ul>
-<li>检查app是否需要更新</li>
-</ul>
-<h5 id="请求URL：-9"><a href="#请求URL：-9" class="headerlink" title="请求URL："></a>请求URL：</h5><ul>
-<li><code>http://xx.com/api/version/check</code></li>
-</ul>
-<h5 id="请求方法：-9"><a href="#请求方法：-9" class="headerlink" title="请求方法："></a>请求方法：</h5><ul>
-<li>POST</li>
-</ul>
-<h5 id="请求参数：-9"><a href="#请求参数：-9" class="headerlink" title="请求参数："></a>请求参数：</h5><table>
-<thead>
-<tr>
-<th style="text-align:center">参数</th>
-<th style="text-align:center">必传</th>
-<th style="text-align:center">类型</th>
-<th style="text-align:center">描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">versionCode</td>
-<td style="text-align:center">ture</td>
-<td style="text-align:center">string</td>
-<td style="text-align:center">应用版本号</td>
-</tr>
-</tbody>
-</table>
-<h5 id="返回数据：-9"><a href="#返回数据：-9" class="headerlink" title="返回数据："></a>返回数据：</h5><figure class="highlight json"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">	<span class="attr">"errorCode"</span>: <span class="number">0</span>,</div><div class="line">	<span class="attr">"data"</span>: &#123;</div><div class="line">		<span class="attr">"isNeedUpdate"</span>: <span class="string">"true"</span>,</div><div class="line">		<span class="attr">"newVersionCode"</span>: <span class="string">"1.5.8"</span></div><div class="line">		<span class="string">"newVersionContent"</span>: <span class="string">"XXXXXXXXXXXX"</span></div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">#### 酒吧流量查询接口</div><div class="line"></div><div class="line">---</div><div class="line"></div><div class="line">##### 简要描述：</div><div class="line"></div><div class="line">- 酒吧人员查询用户流量。</div><div class="line"></div><div class="line">##### 请求URL：</div><div class="line"></div><div class="line">- `http://xx.com/api/bar/sell/check`</div><div class="line"></div><div class="line">##### 请求方法：</div><div class="line"></div><div class="line">- POST</div><div class="line"></div><div class="line">##### 请求参数：</div><div class="line"></div><div class="line">|参数|必传|类型|描述|</div><div class="line">|:-:|:-:|:-:|:-:|</div><div class="line">|userID|true|string|用户ID|</div><div class="line">|startDate|false|string|起始日期|</div><div class="line">|stopDate|false|string|终止日期|</div><div class="line">|startIndex|true|string|起始位置|</div><div class="line">|size|true|string|每次获取数量|</div><div class="line"></div><div class="line">##### 返回数据：</div><div class="line"></div><div class="line">``` json</div><div class="line">&#123;</div><div class="line">	&quot;errorCode&quot;: 0,</div><div class="line">	&quot;data&quot;: &#123;</div><div class="line">		&quot;isEnd&quot;: &quot;false&quot;,</div><div class="line">		&quot;allSize&quot;: &quot;588&quot;</div><div class="line">		&quot;allExchange&quot;: [</div><div class="line">			&#123;</div><div class="line">				&quot;username&quot;: &quot;18688888888&quot;,</div><div class="line">				&quot;datetime&quot;: &quot;2017-09-23 10:10:10&quot;</div><div class="line">			&#125;,</div><div class="line">			&#123;</div><div class="line">				&quot;username&quot;: &quot;18688888888&quot;,</div><div class="line">				&quot;datetime&quot;: &quot;2017-09-23 10:10:10&quot;</div><div class="line">			&#125;,</div><div class="line">			&#123;</div><div class="line">				&quot;username&quot;: &quot;18688888888&quot;,</div><div class="line">				&quot;datetime&quot;: &quot;2017-09-23 10:10:10&quot;</div><div class="line">			&#125;</div><div class="line">		]</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h4 id="检测用户能否消费"><a href="#检测用户能否消费" class="headerlink" title="检测用户能否消费"></a>检测用户能否消费</h4><hr>
-<h5 id="简要描述：-10"><a href="#简要描述：-10" class="headerlink" title="简要描述："></a>简要描述：</h5><ul>
-<li>查询当时用户是否可以兑换酒品。</li>
-</ul>
-<h5 id="请求URL：-10"><a href="#请求URL：-10" class="headerlink" title="请求URL："></a>请求URL：</h5><ul>
-<li><code>http://xx.com/api/order/exchange/check</code></li>
-</ul>
-<h5 id="请求方法：-10"><a href="#请求方法：-10" class="headerlink" title="请求方法："></a>请求方法：</h5><ul>
-<li>POST</li>
-</ul>
-<h5 id="请求参数：-10"><a href="#请求参数：-10" class="headerlink" title="请求参数："></a>请求参数：</h5><table>
-<thead>
-<tr>
-<th style="text-align:center">参数</th>
-<th style="text-align:center">必传</th>
-<th style="text-align:center">类型</th>
-<th style="text-align:center">描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">userID</td>
-<td style="text-align:center">true</td>
-<td style="text-align:center">string</td>
-<td style="text-align:center">用户ID</td>
-</tr>
-</tbody>
-</table>
-<h5 id="返回数据：-10"><a href="#返回数据：-10" class="headerlink" title="返回数据："></a>返回数据：</h5><figure class="highlight json"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">	<span class="attr">"errorCode"</span>: <span class="number">0</span>,</div><div class="line">	<span class="attr">"data"</span>: &#123;</div><div class="line">		<span class="attr">"isCan"</span>: <span class="string">"true"</span>,</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-]]></content>
-    
-    <summary type="html">
-    
-      接口文档
-    
-    </summary>
-    
-    
-      <category term="随笔" scheme="jiaonangshuo.com/tags/%E9%9A%8F%E7%AC%94/"/>
-    
-  </entry>
   
   <entry>
     <title>前公司的小伙伴</title>
@@ -494,27 +52,6 @@
   </entry>
   
   <entry>
-    <title>成长犹如海上航行</title>
-    <link href="jiaonangshuo.com/2017/08/10/%E6%88%90%E9%95%BF%E5%B0%B1%E6%98%AF%E6%B5%B7%E4%B8%8A%E8%88%AA%E8%A1%8C/"/>
-    <id>jiaonangshuo.com/2017/08/10/成长就是海上航行/</id>
-    <published>2017-08-09T16:00:00.000Z</published>
-    <updated>2017-08-10T14:04:57.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>有一个故事，是这么说:<br>有一天，一个人醒来，发现自己在一艘船上，大海无边无际，没有方向，船上还有一些其他人，不认识的陌生人，他们人很好，给这个人起了名字，叫希望。船上的人抚养着希望，希望每日在船上看着海上还有很多船，有些船一帆风顺，有些船因风浪而坠入海底。<br>有一天，希望厌倦了每日呆在一艘船上，他看上了一艘船，很向往，希望能够登着那艘船。于是他告诉了其他船员，船员们有支持，也有反对，然而希望义无反顾，决然而然的跳入海中，向那艘船游过去。经过了漫长的海上漂泊，终于登上了心仪的那艘船，兴奋至极。<br>在这艘船上，希望学习了很多东西，与船员相处也很好。但时间长了，又感受了无聊，无趣，于是开始寻找另外一艘船……<br>在这样不停的找寻，再找寻的过程中，希望渐渐的老去，最终被船员送入大海。<br>很乏味，很无情的故事。当然会很乏味，我自己编的嘛。<br>大学时光闲余时间还是比较多的，就会想很多事情，那时就想到了人生就是那毫无边际的汪洋大海。面对大海，我们走不出去，却也不能停下来，谁都不知道大海下一刻会是什么情况，或许静如止水，或许狂风大浪。而我们能做的就是从一艘不牢固的船换到另外一艘更牢固的船，在跳船的那一刻是艰难的，在海里漂泊更是痛苦绝望的，而到了一艘船上时，是欣喜若狂的。然而，我们就是在这样不停的换船的过程中成长，在毫无方向的大海里，唯一的方向就是死亡，而最坏的结果无非也就是死亡。既然如此，当然会有人渴望能活的更久一些，活的更有意思一些，于是，这些人就在不停的折腾中。<br>在人生中，我们从出生那一刻起，就注定了大方向，就是死亡，不可避免。然而在人生的小方向中，我们却是可以选择的，从一个方向跳到另一个方向，然后再跳到另一个方向，不停的切换这方向，直至消失在海洋里……<br>这也许就是人生的意义。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      从出生那刻起，方向只有一个，就是死亡
-    
-    </summary>
-    
-    
-      <category term="随笔" scheme="jiaonangshuo.com/tags/%E9%9A%8F%E7%AC%94/"/>
-    
-  </entry>
-  
-  <entry>
     <title>致:亲爱的可可 我的爱情观</title>
     <link href="jiaonangshuo.com/2017/08/10/%E8%87%B4%EF%BC%9A%E4%BA%B2%E7%88%B1%E7%9A%84%E5%8F%AF%E5%8F%AF%20%E6%88%91%E7%9A%84%E7%88%B1%E6%83%85%E8%A7%82/"/>
     <id>jiaonangshuo.com/2017/08/10/致：亲爱的可可 我的爱情观/</id>
@@ -532,6 +69,27 @@
     
     
       <category term="珂珂" scheme="jiaonangshuo.com/tags/%E7%8F%82%E7%8F%82/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>成长犹如海上航行</title>
+    <link href="jiaonangshuo.com/2017/08/10/%E6%88%90%E9%95%BF%E5%B0%B1%E6%98%AF%E6%B5%B7%E4%B8%8A%E8%88%AA%E8%A1%8C/"/>
+    <id>jiaonangshuo.com/2017/08/10/成长就是海上航行/</id>
+    <published>2017-08-09T16:00:00.000Z</published>
+    <updated>2017-08-10T14:04:57.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>有一个故事，是这么说:<br>有一天，一个人醒来，发现自己在一艘船上，大海无边无际，没有方向，船上还有一些其他人，不认识的陌生人，他们人很好，给这个人起了名字，叫希望。船上的人抚养着希望，希望每日在船上看着海上还有很多船，有些船一帆风顺，有些船因风浪而坠入海底。<br>有一天，希望厌倦了每日呆在一艘船上，他看上了一艘船，很向往，希望能够登着那艘船。于是他告诉了其他船员，船员们有支持，也有反对，然而希望义无反顾，决然而然的跳入海中，向那艘船游过去。经过了漫长的海上漂泊，终于登上了心仪的那艘船，兴奋至极。<br>在这艘船上，希望学习了很多东西，与船员相处也很好。但时间长了，又感受了无聊，无趣，于是开始寻找另外一艘船……<br>在这样不停的找寻，再找寻的过程中，希望渐渐的老去，最终被船员送入大海。<br>很乏味，很无情的故事。当然会很乏味，我自己编的嘛。<br>大学时光闲余时间还是比较多的，就会想很多事情，那时就想到了人生就是那毫无边际的汪洋大海。面对大海，我们走不出去，却也不能停下来，谁都不知道大海下一刻会是什么情况，或许静如止水，或许狂风大浪。而我们能做的就是从一艘不牢固的船换到另外一艘更牢固的船，在跳船的那一刻是艰难的，在海里漂泊更是痛苦绝望的，而到了一艘船上时，是欣喜若狂的。然而，我们就是在这样不停的换船的过程中成长，在毫无方向的大海里，唯一的方向就是死亡，而最坏的结果无非也就是死亡。既然如此，当然会有人渴望能活的更久一些，活的更有意思一些，于是，这些人就在不停的折腾中。<br>在人生中，我们从出生那一刻起，就注定了大方向，就是死亡，不可避免。然而在人生的小方向中，我们却是可以选择的，从一个方向跳到另一个方向，然后再跳到另一个方向，不停的切换这方向，直至消失在海洋里……<br>这也许就是人生的意义。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      从出生那刻起，方向只有一个，就是死亡
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="jiaonangshuo.com/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
@@ -1006,6 +564,100 @@
     <summary type="html">
     
       一切事物必定有双面，成功于何处，必定也会失败于何处，正所谓“成也萧何败也萧何”
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="jiaonangshuo.com/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2017年个人规划</title>
+    <link href="jiaonangshuo.com/2017/01/17/2017%E5%B9%B4%E4%B8%AA%E4%BA%BA%E8%A7%84%E5%88%92/"/>
+    <id>jiaonangshuo.com/2017/01/17/2017年个人规划/</id>
+    <published>2017-01-16T16:00:00.000Z</published>
+    <updated>2017-07-27T15:41:24.000Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote>
+<p>规划对于我来说，往往只是一个临时的想法，因为我不是一个会按照规划实施的人，只是一个参考</p>
+</blockquote>
+<h2 id="技术规划"><a href="#技术规划" class="headerlink" title="技术规划"></a>技术规划</h2><p>其实2015年给2016年自己的要求就是成为全栈，结果……<br>无论是什么原因吧，总之，是自己的问题，自我反省后还需要继续往前走。<br>所以今年的技术学习计划是：</p>
+<ol>
+<li>Web技术学习，CSS，JS，HTML5<br>时间：2017年2月-2017年3月<br>目标：独立完成项目</li>
+<li>Web现有架构学习，React，Dav<br>时间：2017年3月-2017年4月<br>目标：独立完成项目</li>
+<li>Python服务器端开发<br>目标：独立完成服务器开发，与web产品对接<br>时间：2017年4月-2017年5月</li>
+<li>Android开发<br>目标：独立完成项目<br>时间：2017年5月-2017年6月</li>
+<li>iOS精进<br>目标：精通iOS底层<br>时间：2017年2月-2017年12月（时间穿插，不停的精进）<br>6.Python 脚本学习<br>目标：轻松写脚本<br>时间：2017年6月-2017年6月<br>7.Linux学习<br>目标：玩转centos<br>时间：2017年6月-2017年12月<br>8.运维开发<br>目标：达到服务器运维初级水平<br>时间：2017年5月-2017年7月</li>
+</ol>
+<hr>
+<p>时间安排大致都是一个月左右，实际上能否实施，其实，我心里没有底气，但给自己一个目标是好的。</p>
+<h2 id="读书"><a href="#读书" class="headerlink" title="读书"></a>读书</h2><ol>
+<li>未来简史</li>
+<li>人类简史</li>
+<li>疯狂进化史</li>
+<li>从0到1</li>
+<li>智能时代</li>
+<li>世界观</li>
+<li>重来1-2（重读）</li>
+<li>巨婴国</li>
+<li>把时间当做朋友</li>
+<li>轻疗愈</li>
+<li>成为乔布斯</li>
+<li>乔布斯传</li>
+<li>乔纳森传</li>
+<li>沃兹传</li>
+<li>物演通论</li>
+<li>经济学通识</li>
+<li>一头想要被吃掉的猪</li>
+<li>小顾聊绘画</li>
+<li>每天学点心理学</li>
+<li>三体（重读）</li>
+</ol>
+<hr>
+<p>大概2017年的读书计划也就是这样了，可能会添加，由于读书喜欢思考，刚开始会很慢，也许后期就会快一些；当然了，也可能读不完，不过，没关系，好书，什么时候都要读的。但是，计划还是要有的。</p>
+<h2 id="订阅"><a href="#订阅" class="headerlink" title="订阅"></a>订阅</h2><p>得到里的专栏我当然还是要继续订阅的，不过，讲故事的那个专栏，对我实在没吸引力，估计以后会订阅，但暂时不会有计划。<br>混沌研习社，这个无需多言了，最近几个月的改变也是由于看了混沌研习社的课程才有觉悟的。</p>
+<h2 id="个人项目"><a href="#个人项目" class="headerlink" title="个人项目"></a>个人项目</h2><ul>
+<li>请抽烟 （iOS &amp; Android）</li>
+<li>在线简历制作</li>
+</ul>
+<hr>
+<p>暂时只想考虑这两个，2016年确实思考过很多项目，但暂时觉得有意思的也就是这两个。</p>
+<h2 id="工作方面"><a href="#工作方面" class="headerlink" title="工作方面"></a>工作方面</h2><p>暂且不说，我现在在哪个公司，我心里明白就好了，哈哈。<br>2017年我的选择是两种：</p>
+<ol>
+<li>创业公司</li>
+<li>有大量自由时间的成熟公司<br>原因很简单了，我是一个无拘无束的浪子，不喜欢大公司的各种制度的束缚（这里不是说大公司的管理制度不行，公司到了一定规模，管理制度必须要有的，流程也是一定要有的），比较喜欢比较自由的创业公司，能参与到产品里，而不是码代码。另外第二种有大量时间的成熟公司，当然是对自己的成长供给更多的时间了。</li>
+</ol>
+<h2 id="产品思维的锻炼"><a href="#产品思维的锻炼" class="headerlink" title="产品思维的锻炼"></a>产品思维的锻炼</h2><p>一直想做产品，这里不只是coding，包括产品原型，产品设计，对于原型，还是有把握的，想法很多，也能大致的勾勒出来，就是差整理思路的能力（貌似这个能力最致命），这里需要锻炼，尝试着去做。产品设计，这个嘛，虽然说，我有那么一点点的对视觉美的感觉，但真要设计，估计还是傻缺一个，这个需要培养一定的美学基础。<br>so，2017年就要实际上手锻炼一下。</p>
+<h2 id="脱掉程序员的标签"><a href="#脱掉程序员的标签" class="headerlink" title="脱掉程序员的标签"></a>脱掉程序员的标签</h2><p>2016年空档期的时候，想明白了三件事：</p>
+<ol>
+<li>对自己好点</li>
+<li>让自己开心些</li>
+<li>做自己感兴趣的事</li>
+</ol>
+<p>作为程序员呢，我还真是一个程序员……<br>具体表现就不说了，可能我唯一与传统程序员不同的地方就是我曾经是个喷子，嘴比较能说，擅长聊天吧。<br><code>但我认为我更不同的地方在于：我对于技术的理解在于实用，而不是科研，话说，技术都已经出来了，你再对这个技术深入挖掘，有何意义？待你挖掘完了，技术被淘汰了（这很可能啊）。</code></p>
+<p>###至于怎么脱掉呢？<br>（这个“脱”字，算了，我邪恶了……）<br>    程序员往往被人贴上屌丝的标签，实际上呢，还真是屌丝。<br>    <code>穿着不注重，更别说形象了（当然自己可以说，别人不能说），不善于言谈（当然我觉得我还可以了），固执，脾气不好，或者脾气太好，不注重健康，懒，没有目标，混日子，等等吧（这都是缺点）。</code></p>
+<p><code>优点当然是有的，其实优点更多，最好的就是思维上往往是特别灵活，思路广，歪点子往往也更多，好奇心重，并能迅速寻找答案。</code><br>其实，改变还是很容易的，我总结大概如下：</p>
+<ul>
+<li>抬起头（你的世界不只是键盘和显示器）</li>
+<li>走出门（不要总宅在家）</li>
+<li>说出口（多交流，可不是说你的项目，而是生活）</li>
+<li>敢想象（不要只是想你的代码，想点与代码无关的事情）</li>
+<li>多动手（收拾房间、手洗衣服、做饭、做手工艺品）</li>
+<li>做个逗比（必要每天都是一副一本正经的样子，谁他妈欠你钱啊）</li>
+<li>别做喷子（喷解决不了问题）</li>
+<li>花钱买几身好衣服（这个貌似就我比较吝啬）</li>
+<li>多看非技术书籍（少看点技术书籍吧，那些api网上就有，不会用google吗？多看点提升思想或提升世界观、或改变思维模式、或提高生活品质的书籍）</li>
+</ul>
+<hr>
+<p>大致也就这些吧。</p>
+<h2 id="写博客"><a href="#写博客" class="headerlink" title="写博客"></a>写博客</h2><p>和菜头提倡要动手写文章，我也一直想写，文采，当然是烂的掉渣了，但是一定要写，不写就只会是渣渣了。<br>主要是记录自己思考的点点滴滴，但完全不牵扯技术类文章，一是我不喜欢写技术类文章，二是我不想自己的博客是一个技术博客，更应该是一个人生博客。</p>
+<h2 id="最不愿意提的问题-—找个对象？"><a href="#最不愿意提的问题-—找个对象？" class="headerlink" title="最不愿意提的问题 —找个对象？"></a>最不愿意提的问题 —找个对象？</h2><p>找对象这事吧，我一向觉得还是顺其自然的好，所以呢，随意吧。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      规划对于我来说，往往只是一个临时的想法，因为我不是一个会按照规划实施的人，只是一个参考
     
     </summary>
     
