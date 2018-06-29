@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="jiaonangshuo.com/"/>
-  <updated>2017-11-28T15:52:35.180Z</updated>
+  <updated>2018-06-29T15:01:06.508Z</updated>
   <id>jiaonangshuo.com/</id>
   
   <author>
@@ -14,6 +14,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>汇众教育 接口文档</title>
+    <link href="jiaonangshuo.com/2018/06/29/%E6%B1%87%E4%BC%97%E6%95%99%E8%82%B2%E6%8E%A5%E5%8F%A3/"/>
+    <id>jiaonangshuo.com/2018/06/29/汇众教育接口/</id>
+    <published>2018-06-28T16:00:00.000Z</published>
+    <updated>2018-06-29T15:01:06.508Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="汇众教育-接口文档"><a href="#汇众教育-接口文档" class="headerlink" title="汇众教育 接口文档"></a>汇众教育 接口文档</h1><h2 id="用户数据model"><a href="#用户数据model" class="headerlink" title="用户数据model"></a>用户数据model</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div></pre></td><td class="code"><pre><div class="line">UserInfo(同获取用户信息返回数据model)&#123;</div><div class="line">    action = login;</div><div class="line">    controller = users;</div><div class="line">    copyright = nicedisign;</div><div class="line">    item =     &#123;</div><div class="line">        age = 23;//年龄</div><div class="line">        area = &quot;\U5b89\U5fbd\U7701\U516d\U5b89\U5e02&quot;;//所在地区</div><div class="line">        avatar = &quot;http://huizhong.niceued.com//data/uploads/2018/06/28/1530120559.jpg&quot;;//头像url</div><div class="line">        &quot;created_at&quot; = 1528877054;//创建时间戳</div><div class="line">        education = gaozhong;//学历</div><div class="line">        email = &quot;446765517@163.com&quot;;//邮箱</div><div class="line">        &quot;hashed_password&quot; = e69a6fbafc4eb8bb5c53d7902c8a9fe1;//密码hash</div><div class="line">        id = 38;//userid</div><div class="line">        &quot;is_activated&quot; = 0;//激活状态</div><div class="line">        &quot;is_admin&quot; = 0;//是否是管理员</div><div class="line">        &quot;is_agree&quot; = 0;//是否可登录</div><div class="line">        &quot;is_daikuan&quot; = 1;//是否贷款</div><div class="line">        jointime = 0;//入职时间</div><div class="line">        &quot;login_at&quot; = 1530277655;//登录时间</div><div class="line">        mobile = 13411002100;//手机号</div><div class="line">        newpass = &quot;&quot;;//</div><div class="line">        nickname = &quot;\U5434\U5a77\U5a77&quot;;//昵称</div><div class="line">        parentmobile = 13304003236;//父母电话</div><div class="line">        parentname = &quot;\U5434\U4eac&quot;;//家长姓名</div><div class="line">        parentweixin = wujing;//家长微信</div><div class="line">        password = e69a6fbafc4eb8bb5c53d7902c8a9fe1;//</div><div class="line">        profess = other;//专业</div><div class="line">        qq = 1234657671;//QQ</div><div class="line">        salt = 53410;//</div><div class="line">        schoolarea = 2;//校区</div><div class="line">        sex = 0;//性别 0 = 女 1 = 男</div><div class="line">        &quot;stu_classid&quot; = 1;//班级id</div><div class="line">        &quot;stu_id&quot; = 0601P2P001;//学生id</div><div class="line">        teachprofess = &quot;&quot;;//教师所教课程</div><div class="line">        token = &quot;XzFTbQ==&quot;;</div><div class="line">        type = normal;//用户类型</div><div class="line">        &quot;updated_at&quot; = 1530277655;</div><div class="line">        &quot;user_typeid&quot; = 6;// 用户角色 1 = 超级管理员 (app端不会用到),2 =  总部 3 = 校长 4 = 班主任 5= 老师 6= 学生</div><div class="line">        username = xuesheng; //用户名</div><div class="line">        weixin = tingting;//wechat</div><div class="line">        work = &quot;&quot;;//职位 总部人员的职位</div><div class="line">    &#125;;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="登录"><a href="#登录" class="headerlink" title="登录"></a>登录</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">http://huizhong.niceued.com/api/?c=users&amp;a=login</div><div class="line">POST&#123;</div><div class="line">username:String</div><div class="line">password:String    </div><div class="line">&#125;</div><div class="line">return:UserInfo</div></pre></td></tr></table></figure>
+<h2 id="获取用户信息"><a href="#获取用户信息" class="headerlink" title="获取用户信息"></a>获取用户信息</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">http://huizhong.niceued.com/api/?c=centers&amp;a=index</div><div class="line">POST&#123;uid:String&#125; uid=UserInfo.id</div><div class="line">return UserInfo</div></pre></td></tr></table></figure>
+<h2 id="找回密码"><a href="#找回密码" class="headerlink" title="找回密码"></a>找回密码</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">http://huizhong.niceued.com/api/?c=users&amp;a=retrievepaw</div><div class="line">POST&#123;email:String&#125;</div><div class="line">return &#123;</div><div class="line">    action = retrievepaw; //操作</div><div class="line">    controller = users;</div><div class="line">    copyright = nicedisign;</div><div class="line">    msg = &quot;操作成功！&quot;;//注意这里，只有返回msg = &quot;操作成功！&quot;才是返回正确的数据，否则都是报错了</div><div class="line">    redirect = &quot;&lt;null&gt;&quot;;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="修改密码"><a href="#修改密码" class="headerlink" title="修改密码"></a>修改密码</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">http://huizhong.niceued.com/api/?c=users&amp;a=changepassword</div><div class="line">POST&#123;password:Stirng,newpassword:String,repassword:String&#125;</div><div class="line">return &#123;</div><div class="line">    action = ; //操作</div><div class="line">    controller = ;</div><div class="line">    copyright = ;</div><div class="line">    msg = &quot;操作成功！&quot;;//注意这里，只有返回msg = &quot;操作成功！&quot;才是返回正确的数据，否则都是报错了</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      汇众教育 接口文档
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="jiaonangshuo.com/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
   
   <entry>
     <title>又一次因为个人问题跟父亲发脾气</title>
@@ -572,100 +597,6 @@
     <summary type="html">
     
       一切事物必定有双面，成功于何处，必定也会失败于何处，正所谓“成也萧何败也萧何”
-    
-    </summary>
-    
-    
-      <category term="随笔" scheme="jiaonangshuo.com/tags/%E9%9A%8F%E7%AC%94/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2017年个人规划</title>
-    <link href="jiaonangshuo.com/2017/01/17/2017%E5%B9%B4%E4%B8%AA%E4%BA%BA%E8%A7%84%E5%88%92/"/>
-    <id>jiaonangshuo.com/2017/01/17/2017年个人规划/</id>
-    <published>2017-01-16T16:00:00.000Z</published>
-    <updated>2017-07-27T15:41:24.000Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote>
-<p>规划对于我来说，往往只是一个临时的想法，因为我不是一个会按照规划实施的人，只是一个参考</p>
-</blockquote>
-<h2 id="技术规划"><a href="#技术规划" class="headerlink" title="技术规划"></a>技术规划</h2><p>其实2015年给2016年自己的要求就是成为全栈，结果……<br>无论是什么原因吧，总之，是自己的问题，自我反省后还需要继续往前走。<br>所以今年的技术学习计划是：</p>
-<ol>
-<li>Web技术学习，CSS，JS，HTML5<br>时间：2017年2月-2017年3月<br>目标：独立完成项目</li>
-<li>Web现有架构学习，React，Dav<br>时间：2017年3月-2017年4月<br>目标：独立完成项目</li>
-<li>Python服务器端开发<br>目标：独立完成服务器开发，与web产品对接<br>时间：2017年4月-2017年5月</li>
-<li>Android开发<br>目标：独立完成项目<br>时间：2017年5月-2017年6月</li>
-<li>iOS精进<br>目标：精通iOS底层<br>时间：2017年2月-2017年12月（时间穿插，不停的精进）<br>6.Python 脚本学习<br>目标：轻松写脚本<br>时间：2017年6月-2017年6月<br>7.Linux学习<br>目标：玩转centos<br>时间：2017年6月-2017年12月<br>8.运维开发<br>目标：达到服务器运维初级水平<br>时间：2017年5月-2017年7月</li>
-</ol>
-<hr>
-<p>时间安排大致都是一个月左右，实际上能否实施，其实，我心里没有底气，但给自己一个目标是好的。</p>
-<h2 id="读书"><a href="#读书" class="headerlink" title="读书"></a>读书</h2><ol>
-<li>未来简史</li>
-<li>人类简史</li>
-<li>疯狂进化史</li>
-<li>从0到1</li>
-<li>智能时代</li>
-<li>世界观</li>
-<li>重来1-2（重读）</li>
-<li>巨婴国</li>
-<li>把时间当做朋友</li>
-<li>轻疗愈</li>
-<li>成为乔布斯</li>
-<li>乔布斯传</li>
-<li>乔纳森传</li>
-<li>沃兹传</li>
-<li>物演通论</li>
-<li>经济学通识</li>
-<li>一头想要被吃掉的猪</li>
-<li>小顾聊绘画</li>
-<li>每天学点心理学</li>
-<li>三体（重读）</li>
-</ol>
-<hr>
-<p>大概2017年的读书计划也就是这样了，可能会添加，由于读书喜欢思考，刚开始会很慢，也许后期就会快一些；当然了，也可能读不完，不过，没关系，好书，什么时候都要读的。但是，计划还是要有的。</p>
-<h2 id="订阅"><a href="#订阅" class="headerlink" title="订阅"></a>订阅</h2><p>得到里的专栏我当然还是要继续订阅的，不过，讲故事的那个专栏，对我实在没吸引力，估计以后会订阅，但暂时不会有计划。<br>混沌研习社，这个无需多言了，最近几个月的改变也是由于看了混沌研习社的课程才有觉悟的。</p>
-<h2 id="个人项目"><a href="#个人项目" class="headerlink" title="个人项目"></a>个人项目</h2><ul>
-<li>请抽烟 （iOS &amp; Android）</li>
-<li>在线简历制作</li>
-</ul>
-<hr>
-<p>暂时只想考虑这两个，2016年确实思考过很多项目，但暂时觉得有意思的也就是这两个。</p>
-<h2 id="工作方面"><a href="#工作方面" class="headerlink" title="工作方面"></a>工作方面</h2><p>暂且不说，我现在在哪个公司，我心里明白就好了，哈哈。<br>2017年我的选择是两种：</p>
-<ol>
-<li>创业公司</li>
-<li>有大量自由时间的成熟公司<br>原因很简单了，我是一个无拘无束的浪子，不喜欢大公司的各种制度的束缚（这里不是说大公司的管理制度不行，公司到了一定规模，管理制度必须要有的，流程也是一定要有的），比较喜欢比较自由的创业公司，能参与到产品里，而不是码代码。另外第二种有大量时间的成熟公司，当然是对自己的成长供给更多的时间了。</li>
-</ol>
-<h2 id="产品思维的锻炼"><a href="#产品思维的锻炼" class="headerlink" title="产品思维的锻炼"></a>产品思维的锻炼</h2><p>一直想做产品，这里不只是coding，包括产品原型，产品设计，对于原型，还是有把握的，想法很多，也能大致的勾勒出来，就是差整理思路的能力（貌似这个能力最致命），这里需要锻炼，尝试着去做。产品设计，这个嘛，虽然说，我有那么一点点的对视觉美的感觉，但真要设计，估计还是傻缺一个，这个需要培养一定的美学基础。<br>so，2017年就要实际上手锻炼一下。</p>
-<h2 id="脱掉程序员的标签"><a href="#脱掉程序员的标签" class="headerlink" title="脱掉程序员的标签"></a>脱掉程序员的标签</h2><p>2016年空档期的时候，想明白了三件事：</p>
-<ol>
-<li>对自己好点</li>
-<li>让自己开心些</li>
-<li>做自己感兴趣的事</li>
-</ol>
-<p>作为程序员呢，我还真是一个程序员……<br>具体表现就不说了，可能我唯一与传统程序员不同的地方就是我曾经是个喷子，嘴比较能说，擅长聊天吧。<br><code>但我认为我更不同的地方在于：我对于技术的理解在于实用，而不是科研，话说，技术都已经出来了，你再对这个技术深入挖掘，有何意义？待你挖掘完了，技术被淘汰了（这很可能啊）。</code></p>
-<p>###至于怎么脱掉呢？<br>（这个“脱”字，算了，我邪恶了……）<br>    程序员往往被人贴上屌丝的标签，实际上呢，还真是屌丝。<br>    <code>穿着不注重，更别说形象了（当然自己可以说，别人不能说），不善于言谈（当然我觉得我还可以了），固执，脾气不好，或者脾气太好，不注重健康，懒，没有目标，混日子，等等吧（这都是缺点）。</code></p>
-<p><code>优点当然是有的，其实优点更多，最好的就是思维上往往是特别灵活，思路广，歪点子往往也更多，好奇心重，并能迅速寻找答案。</code><br>其实，改变还是很容易的，我总结大概如下：</p>
-<ul>
-<li>抬起头（你的世界不只是键盘和显示器）</li>
-<li>走出门（不要总宅在家）</li>
-<li>说出口（多交流，可不是说你的项目，而是生活）</li>
-<li>敢想象（不要只是想你的代码，想点与代码无关的事情）</li>
-<li>多动手（收拾房间、手洗衣服、做饭、做手工艺品）</li>
-<li>做个逗比（必要每天都是一副一本正经的样子，谁他妈欠你钱啊）</li>
-<li>别做喷子（喷解决不了问题）</li>
-<li>花钱买几身好衣服（这个貌似就我比较吝啬）</li>
-<li>多看非技术书籍（少看点技术书籍吧，那些api网上就有，不会用google吗？多看点提升思想或提升世界观、或改变思维模式、或提高生活品质的书籍）</li>
-</ul>
-<hr>
-<p>大致也就这些吧。</p>
-<h2 id="写博客"><a href="#写博客" class="headerlink" title="写博客"></a>写博客</h2><p>和菜头提倡要动手写文章，我也一直想写，文采，当然是烂的掉渣了，但是一定要写，不写就只会是渣渣了。<br>主要是记录自己思考的点点滴滴，但完全不牵扯技术类文章，一是我不喜欢写技术类文章，二是我不想自己的博客是一个技术博客，更应该是一个人生博客。</p>
-<h2 id="最不愿意提的问题-—找个对象？"><a href="#最不愿意提的问题-—找个对象？" class="headerlink" title="最不愿意提的问题 —找个对象？"></a>最不愿意提的问题 —找个对象？</h2><p>找对象这事吧，我一向觉得还是顺其自然的好，所以呢，随意吧。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      规划对于我来说，往往只是一个临时的想法，因为我不是一个会按照规划实施的人，只是一个参考
     
     </summary>
     
