@@ -508,7 +508,7 @@
     <link href="jiaonangshuo.com/2017/02/09/%E4%B8%AA%E4%BA%BA%E7%AE%80%E5%8E%86/"/>
     <id>jiaonangshuo.com/2017/02/09/个人简历/</id>
     <published>2017-02-08T16:00:00.000Z</published>
-    <updated>2018-07-07T16:04:27.641Z</updated>
+    <updated>2018-07-08T02:49:27.573Z</updated>
     
     <content type="html"><![CDATA[<h1 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h1><ul>
 <li>手机： 18601255272、18623864465</li>
@@ -528,7 +528,7 @@
 <li>意向公司：优秀产品，思想活跃，活力团队。</li>
 </ul>
 <hr>
-<h1 id="工作经历"><a href="#工作经历" class="headerlink" title="工作经历"></a>工作经历</h1><h2 id="北京必然如此网络技术有限公司-2017年7月-至今"><a href="#北京必然如此网络技术有限公司-2017年7月-至今" class="headerlink" title="北京必然如此网络技术有限公司 (2017年7月~至今)"></a><a href="https://bixin.im/" target="_blank" rel="external">北京必然如此网络技术有限公司</a> (2017年7月~至今)</h2><h3 id="币信iOS客户端"><a href="#币信iOS客户端" class="headerlink" title="币信iOS客户端"></a>币信iOS客户端</h3><p><code>币信是区块链领域的拥有IM功能的虚拟货币钱包</code><br>工作职责是币信iOS客户端的版本迭代和fix bug，由于从入职到现在已更新了30多个版本，在此就不细说了。主要参与模块有IM、币圈、转账、场外、行情等。</p>
+<h1 id="工作经历"><a href="#工作经历" class="headerlink" title="工作经历"></a>工作经历</h1><h2 id="北京必然如此网络技术有限公司-2017年7月-至今"><a href="#北京必然如此网络技术有限公司-2017年7月-至今" class="headerlink" title="北京必然如此网络技术有限公司 (2017年7月~至今)"></a><a href="https://bixin.im/" target="_blank" rel="external">北京必然如此网络技术有限公司</a> (2017年7月~至今)</h2><h3 id="币信iOS客户端"><a href="#币信iOS客户端" class="headerlink" title="币信iOS客户端"></a>币信iOS客户端</h3><p><code>币信是区块链领域的拥有IM功能的虚拟货币钱包</code><br>工作职责是币信iOS客户端的版本迭代和fix bug，从入职到现在已更新了30多个版本，主要参与模块有IM、币圈、转账、场外、行情等。</p>
 <h2 id="趣活美食送-（2016年7月-2017年7月）"><a href="#趣活美食送-（2016年7月-2017年7月）" class="headerlink" title="趣活美食送 （2016年7月~2017年7月）"></a><a href="http://www.meishisong.cn" target="_blank" rel="external">趣活美食送</a> （2016年7月~2017年7月）</h2><hr>
 <h3 id="嗷嗷商家iOS客户端-AppStore"><a href="#嗷嗷商家iOS客户端-AppStore" class="headerlink" title="嗷嗷商家iOS客户端  AppStore"></a>嗷嗷商家iOS客户端  <a href="https://itunes.apple.com/cn/app/ao-ao-shang-jia-kuai-su-fa/id1167947303?mt=8" target="_blank" rel="external">AppStore</a></h3><p><code>嗷嗷商家是嗷嗷系统里一个环节，商家通过App签约服务商，发单</code></p>
 <h4 id="版本历史"><a href="#版本历史" class="headerlink" title="版本历史"></a>版本历史</h4><h5 id="1-4-（1-4为初始版）"><a href="#1-4-（1-4为初始版）" class="headerlink" title="1.4 （1.4为初始版）"></a>1.4 （1.4为初始版）</h5><ul>
@@ -559,7 +559,7 @@
 <h3 id="捷越相关项目"><a href="#捷越相关项目" class="headerlink" title="捷越相关项目"></a>捷越相关项目</h3><ul>
 <li>捷越理财  2014.06 ~ 2014.07<br><code>介绍捷越理财产品的展示型App，主要是UI</code></li>
 <li>车贷项目 2014.08 ~ 2014.09<br><code>企业项目，针对捷越车贷部门设计的一个管理抵押车辆的App，主要分为入库和出库，因公司战略原因，项目在完成UI后夭折，使用Swift1.0编写</code></li>
-<li>还款易 2014.12 ~2015.03<br><code>企业项目，用户公司借贷客户的信息填写、申请、借款信息、产品介绍、还款提醒、记录根治等等功能</code><br>以上三个项目是捷越产品，其中“捷越理财”上线AppStore，“车贷项目”夭折，“还款易”以企业证书发布。开发方面与另一同事同事同时完成，共同商定项目架构、语言、三方库等。<h3 id="胶囊项目-原创新事业部-独立为分公司-胶囊奇点"><a href="#胶囊项目-原创新事业部-独立为分公司-胶囊奇点" class="headerlink" title="胶囊项目(原创新事业部 独立为分公司 胶囊奇点)"></a>胶囊项目(原创新事业部 独立为分公司 胶囊奇点)</h3><h4 id="胶囊奇点-2015-08-2016-02"><a href="#胶囊奇点-2015-08-2016-02" class="headerlink" title="胶囊奇点 2015.08 ~ 2016.02"></a>胶囊奇点 2015.08 ~ 2016.02</h4><h5 id="版本历史-1"><a href="#版本历史-1" class="headerlink" title="版本历史"></a>版本历史</h5></li>
+<li>还款易 2014.12 ~2015.03<br><code>企业项目，用户公司借贷客户的信息填写、申请、借款信息、产品介绍、还款提醒、记录根治等等功能</code><br>以上三个项目是捷越产品，其中“捷越理财”上线AppStore，“车贷项目”夭折，“还款易”以企业证书发布。开发方面与另一同事同事同时完成，共同商定项目架构、语言、三方库等。<h3 id="胶囊项目-原创新事业部-独立为分公司-胶囊奇点"><a href="#胶囊项目-原创新事业部-独立为分公司-胶囊奇点" class="headerlink" title="胶囊项目(原创新事业部 独立为分公司 胶囊奇点)"></a>胶囊项目(原创新事业部 独立为分公司 胶囊奇点)</h3><h4 id="胶囊奇点-原北京捷越联合信息咨询有限公司-创新事业部-2015-08-2016-02"><a href="#胶囊奇点-原北京捷越联合信息咨询有限公司-创新事业部-2015-08-2016-02" class="headerlink" title="胶囊奇点 (原北京捷越联合信息咨询有限公司 创新事业部) 2015.08 ~ 2016.02"></a>胶囊奇点 (原北京捷越联合信息咨询有限公司 创新事业部) 2015.08 ~ 2016.02</h4><h5 id="版本历史-1"><a href="#版本历史-1" class="headerlink" title="版本历史"></a>版本历史</h5></li>
 <li>1.0 2015.08 ~2015.09<br><code>小额借贷项目，包含信息录入、额度审批、借款、还款等功能，负责整个项目的安排</code></li>
 <li>2.0 2015.10 ~ 2016.01<br><code>根据1.0版本整体UI改版</code></li>
 <li>2.1 2016.01 ~ 2016.01<br><code>bug修复，添加月贷功能</code></li>
